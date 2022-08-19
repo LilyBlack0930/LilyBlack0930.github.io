@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="兔兔"><title>兔兔鱼塘改造计划 · 兔兔实验室</title><meta name="description" content="🐟🐟🐟🐟🐟
+兔兔鱼塘算是我早期做的骰娘脚本之一，参考了世界和惠惠的好感脚本东拼西凑而成的。
+最初，对于摸鱼量的变量甚至沿用了好感的“favor”。后来很快改成了“fish”同时被迫重置了所有人的摸鱼数，虽然对初期而言这些小数据几乎算得上无关紧要罢了。不过从这件事还是能明显地看出来我那时稚嫩"><meta name="keywords" content="Blog,博客,Hexo"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.webp"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/insight.css"><link rel="stylesheet" href="/css/search.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 6.1.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li> <a href="/">首页</a></li><li> <a href="/archives">归档</a></li><li> <a href="/tags">标签</a></li><li> <a href="/about">关于</a></li><li> <a href="/links">友链</a></li><li> <a href="/guestbook">留言</a></li></div><div class="information"><div class="nav_right_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li><li><a class="fa fa-search" onclick="openWindow();"></a></li></div><div class="avatar"><img src="/images/logo.webp"></div></div></div><div class="sidebar animated fadeInDown"><div class="sidebar-top"><div class="logo-title"><div class="title"><img src="/images/logo@2x.webp" style="width:200px;" alt="favicon"><h3 title=""><a href="/">兔兔实验室</a></h3><div class="description"><p>你踩到了落在地上的纸张，然后摔倒了——</p></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/LilyBlack0930"><i class="fa fa-github"></i></a></li><li><a target="_blank" rel="noopener" href="http://sighttp.qq.com/authd?IDKEY=1142145792"><i class="fa fa-qq"></i></a></li></ul></div></div><div class="footer"><div class="p"> <span> 全站CC-BY-SA-3.0 </span><i class="fa fa-star"></i><span> 兔兔</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><span>Anatolo </span></div><div class="beian"></div></div></div><div class="main"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>兔兔鱼塘改造计划</a></h3></div><div class="post-content"><p><script type="text/javascript" src="/js/candy.min.js"></script>
+<p>🐟🐟🐟🐟🐟</p>
+<p>兔兔鱼塘算是我早期做的骰娘脚本之一，参考了世界和惠惠的好感脚本东拼西凑而成的。</p>
+<p>最初，对于摸鱼量的变量甚至沿用了好感的“favor”。后来很快改成了“fish”同时被迫重置了所有人的摸鱼数，虽然对初期而言这些小数据几乎算得上无关紧要罢了。不过从这件事还是能明显地看出来我那时稚嫩得不得了的Lua水准。</p>
+<p>搬家途中，这个脚本的搬运是不可或缺的。同时进行一次改造，就当练手吧。</p>
+<hr>
+<h1 id="原设定"><a href="#原设定" class="headerlink" title="原设定"></a>原设定</h1><p>兔兔鱼塘最初的灵感来自于惠惠的“摸惠惠”好感系统，实际改自好感送礼脚本。在后来重置后删除了不必要的部分，并再一次修改了变量名。<del>笑死大家的鱼塘又没了</del></p>
+<p>至于为什么宁可做个摸鱼计数也不做好感计数呢，关于这点我有自己的考量。风见花理未来也不会添加好感度系统。</p>
+<p>指令为“我要摸鱼！”，每次发送指令后返回固定的回复。</p>
+<blockquote>
+<p>你抽出一条大鱼，用娴熟的手法抚摸起来。<br>今日已摸■条<br>累计摸鱼■■条</p>
+</blockquote>
+<p>其中第二行为<strong>单人当日</strong>摸鱼数量，第三行为<strong>全服累计</strong>摸鱼数量。<del>两条内容怎么牛头不对马嘴的……</del></p>
+<p>每天可使用3次该指令，每次使用均为固定回复，到达上限后返回特殊回复。</p>
+<blockquote>
+<p>摸鱼也要有个限度啊▲▲！</p>
+</blockquote>
+<p>另外还有指令“查看鱼塘”，同样为送礼差分，根据不同的数量显示不同的回复，仅此而已。</p>
+<blockquote>
+<p>什么嘛，▲▲的鱼塘里这不是完全没有鱼嘛”<br>▲▲已经摸了■条鱼，要加油哦<br>▲▲已经摸了■■条鱼，稍具规模了呢<br>▲▲，你已经摸了■■条了，你是波塞冬吗？<br>▲▲，我不知你抱着何种心态……总之你已经摸了■■■条鱼了，永无止境的摸鱼啊……</p>
+</blockquote>
+<p>反正甚至没人达到第四行的水平（180条）</p>
+<p>最后，存在扣除自己的鱼的指令“放生鱼鱼”，其实本来准备与兔兔病栋系列的C币系统联动，但最后也没有做。</p>
+<blockquote>
+<p>你将一条鱼放回了鱼塘，它很感激你并用尾巴抽了你一大嘴巴子</p>
+</blockquote>
+<p>以及无鱼可放时的差分</p>
+<blockquote>
+<p>▲▲你已经没有鱼可以放生了！</p>
+</blockquote>
+<p>就这些指令，没了。</p>
+<p>可以看见实际上该脚本完全沾不上“有趣”的边……</p>
+<p>因此我决定对其进行<del>资本主义</del>改造。</p>
+<hr>
+<h1 id="计划"><a href="#计划" class="headerlink" title="计划"></a>计划</h1><p>——我，很不幸地，一度沉迷于各种合成类小游戏……</p>
+<p>私以为，如果要能让人玩下去的话，一套<strong>带图</strong>、<strong>有简单的正反馈</strong>、<strong>有一定长度</strong>、甚至<strong>埋藏彩蛋</strong>的体系是必不可少的。</p>
+<p>作图实在麻烦，并且一被风控最容易被杀，所以还是选择了emoji系列。</p>
+<p>在简单找了几个网站（<a target="_blank" rel="noopener" href="https://www.ifreesite.com/emoji/">ifreesite</a> &#x2F; <a target="_blank" rel="noopener" href="https://emojixd.com/">emojiXD</a> &#x2F; <a target="_blank" rel="noopener" href="https://unicode.org/emoji/charts/full-emoji-list.html">unicode.org</a>）后，将emoji锁定在几个即使电脑浏览器也能显示的水产上，并将其按等级从高到低排序。</p>
+<blockquote>
+<p>🐳 🐋 🦈 🐬 🐙 🦑 🐡 🐠 🐟</p>
+</blockquote>
+<p>同时在查找时也注意收集其他emoji，以下是未被应用的水产：</p>
+<blockquote>
+<p>🐚 🦀 🦞 🦐 🦪</p>
+</blockquote>
+<p><del>生蚝看起来好诱人啊我明明没吃过</del></p>
+<p>虽然可能没有用，但是先收起来总没错的。</p>
+<p>其实初设定时并未计入鱿鱼（第六个），且章鱼原本排在第三，仅次于两条鲸鱼。但是刚好赶上喷射战士3发售，鱿鱼和章鱼不排一起怎么行？！</p>
+<p>今天写不完了。</p>
+<h3 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h3></p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2022-08-19</span><i class="fa fa-tag"></i><a class="tag" href="/tags/尚未实现/" title="尚未实现">尚未实现 </a><span class="leancloud_visitors"></span><span>大约1101个字, 3分钟40秒读完</span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2022/08/19/兔兔鱼塘改造计划/,兔兔实验室,兔兔鱼塘改造计划,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/2022/05/08/NoneBot%E6%90%AD%E5%BB%BA%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/" title="NoneBot搭建经验总结">下一篇</a></li></ul></div><script src="/js/visitors.js"></script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script>(function(window){var INSIGHT_CONFIG={TRANSLATION:{POSTS:"文章",PAGES:"页面",CATEGORIES:"分类",TAGS:"标签",UNTITLED:"(无标题)",},CONTENT_URL:"/content.json",};window.INSIGHT_CONFIG=INSIGHT_CONFIG})(window);</script><script src="/js/insight.js" defer></script><div class="searchbox ins-search"><div class="searchbox-container ins-search-container"><div class="searchbox-input-wrapper"><input class="searchbox-input ins-search-input" type="text" placeholder="想要查找什么..."><span class="searchbox-close"><a class="fa fa-times-circle" onclick="closeWindow();"></a></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"><p>Seraching...</p></div></div></div></div></body></html>

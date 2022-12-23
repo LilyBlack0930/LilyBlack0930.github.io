@@ -1,23 +1,65 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="兔兔"><title>bot功能列表 · 兔兔实验室</title><meta name="description" content="Dice!&amp;#x2F;海豹模块
 
- rd（40%，但可能需要重做）
- 角色卡录入、读取、ra&amp;#x2F;rc（30%、30%、10%（需要对掷骰逻辑进一步分析））
- log模块
- coc角色卡生成&amp;#x2F;dnd角色卡生成（dnd？真不熟）
- help模块
- ob模块
- draw抽卡模块（有点难度"><meta name="keywords" content="Blog,博客,Hexo"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.webp"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/insight.css"><link rel="stylesheet" href="/css/search.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 6.1.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li> <a href="/">首页</a></li><li> <a href="/archives">归档</a></li><li> <a href="/tags">标签</a></li><li> <a href="/about">关于</a></li><li> <a href="/links">友链</a></li><li> <a href="/guestbook">留言</a></li></div><div class="information"><div class="nav_right_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li><li><a class="fa fa-search" onclick="openWindow();"></a></li></div><div class="avatar"><img src="/images/logo.webp"></div></div></div><div class="sidebar animated fadeInDown"><div class="sidebar-top"><div class="logo-title"><div class="title"><img src="/images/logo@2x.webp" style="width:200px;" alt="favicon"><h3 title=""><a href="/">兔兔实验室</a></h3><div class="description"><p>你踩到了落在地上的纸张，然后摔倒了——</p></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/LilyBlack0930"><i class="fa fa-github"></i></a></li><li><a target="_blank" rel="noopener" href="http://sighttp.qq.com/authd?IDKEY=1142145792"><i class="fa fa-qq"></i></a></li></ul></div></div><div class="footer"><div class="p"> <span> 全站CC-BY-SA-3.0 </span><i class="fa fa-star"></i><span> 兔兔</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><span>Anatolo </span></div><div class="beian"></div></div></div><div class="main"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>bot功能列表</a></h3></div><div class="post-content"><p><script type="text/javascript" src="/js/candy.min.js"></script>
+ 
+rd
+
+ 一般掷骰（.r）
+ 复合表达式掷骰（.rXdX、加减乘除等）
+ 表达式与掷骰理由分离
+ 多轮掷骰（.r[次数]#[表达式]）
+ 其他规则掷骰（rh、rb&amp;#x2F;p等）
+ rh
+ rb&amp;#x2F;rp
+
+
+ 忽略过程的掷骰（.rs）
+
+
+ 
+角色卡录"><meta name="keywords" content="Blog,博客,Hexo"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.webp"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/insight.css"><link rel="stylesheet" href="/css/search.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 6.1.0"></head><body><div class="page-top animated fadeInDown"><div class="nav"><li> <a href="/">首页</a></li><li> <a href="/archives">归档</a></li><li> <a href="/tags">标签</a></li><li> <a href="/about">关于</a></li><li> <a href="/links">友链</a></li><li> <a href="/guestbook">留言</a></li></div><div class="information"><div class="nav_right_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li><li><a class="fa fa-search" onclick="openWindow();"></a></li></div><div class="avatar"><img src="/images/logo.webp"></div></div></div><div class="sidebar animated fadeInDown"><div class="sidebar-top"><div class="logo-title"><div class="title"><img src="/images/logo@2x.webp" style="width:200px;" alt="favicon"><h3 title=""><a href="/">兔兔实验室</a></h3><div class="description"><p>你踩到了落在地上的纸张，然后摔倒了——</p></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/LilyBlack0930"><i class="fa fa-github"></i></a></li><li><a target="_blank" rel="noopener" href="http://sighttp.qq.com/authd?IDKEY=1142145792"><i class="fa fa-qq"></i></a></li></ul></div></div><div class="footer"><div class="p"> <span> 全站CC-BY-SA-3.0 </span><i class="fa fa-star"></i><span> 兔兔</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><span>Anatolo </span></div><div class="beian"></div></div></div><div class="main"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>bot功能列表</a></h3></div><div class="post-content"><p><script type="text/javascript" src="/js/candy.min.js"></script>
 
 <ul>
 <li><p>Dice!&#x2F;海豹模块</p>
 <ul>
-<li><input disabled="" type="checkbox"> rd（40%，但可能需要重做）</li>
-<li><input disabled="" type="checkbox"> 角色卡录入、读取、ra&#x2F;rc（30%、30%、10%（需要对掷骰逻辑进一步分析））</li>
-<li><input disabled="" type="checkbox"> log模块</li>
-<li><input disabled="" type="checkbox"> coc角色卡生成&#x2F;dnd角色卡生成（dnd？真不熟）</li>
-<li><input disabled="" type="checkbox"> help模块</li>
-<li><input disabled="" type="checkbox"> ob模块</li>
-<li><input disabled="" type="checkbox"> draw抽卡模块（有点难度推荐搁置）（5%）</li>
+<li><p><input checked="" disabled="" type="checkbox"> 
+rd</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 一般掷骰（.r）</li>
+<li><input checked="" disabled="" type="checkbox"> 复合表达式掷骰（.rXdX、加减乘除等）</li>
+<li><input checked="" disabled="" type="checkbox"> 表达式与掷骰理由分离</li>
+<li><input checked="" disabled="" type="checkbox"> 多轮掷骰（.r[次数]#[表达式]）</li>
+<li><input checked="" disabled="" type="checkbox"> 其他规则掷骰（rh、rb&#x2F;p等）<ul>
+<li><input checked="" disabled="" type="checkbox"> rh</li>
+<li><input checked="" disabled="" type="checkbox"> rb&#x2F;rp</li>
+</ul>
+</li>
+<li><input checked="" disabled="" type="checkbox"> 忽略过程的掷骰（.rs）</li>
+</ul>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+角色卡录入、读取、ra&#x2F;rc（30%、30%、10%（需要对掷骰逻辑进一步分析））</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+log模块</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+coc角色卡生成&#x2F;dnd角色卡生成（dnd？真不熟）</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+help模块</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+ob模块</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+draw抽卡模块（有点难度推荐搁置）（5%）</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+nn自定义全局昵称或单群昵称</p>
+</li>
+<li><p><input disabled="" type="checkbox"> 
+bot开关</p>
+</li>
 </ul>
 </li>
 <li><p>赵骰模块</p>
@@ -53,5 +95,13 @@
 <li><input disabled="" type="checkbox"> 狗屁不通文章生成器</li>
 </ul>
 </li>
+<li><p>从其他地方弄来的插件</p>
+<ul>
+<li><p>黄黑站标题图片生成</p>
+</li>
+<li><p>homonumber&#x2F;臭数字（114514论证器）</p>
+</li>
 </ul>
-</p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2022-11-18</span><i class="fa fa-tag"></i><a class="tag" href="/tags/NoneBot/" title="NoneBot">NoneBot </a><span class="leancloud_visitors"></span><span>大约370个字, 1分钟14秒读完</span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2022/11/18/bot功能列表/,兔兔实验室,bot功能列表,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2022/11/20/CQ%E7%A0%81%E3%80%81%E5%9B%BE%E5%BA%8A%E3%80%81%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80%E5%85%B3%E7%B3%BB%E6%A2%B3%E7%90%86/" title="CQ码、图床、图片地址关系梳理">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2022/09/30/20220930/" title="20220930">下一篇</a></li></ul></div><script src="/js/visitors.js"></script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script>(function(window){var INSIGHT_CONFIG={TRANSLATION:{POSTS:"文章",PAGES:"页面",CATEGORIES:"分类",TAGS:"标签",UNTITLED:"(无标题)",},CONTENT_URL:"/content.json",};window.INSIGHT_CONFIG=INSIGHT_CONFIG})(window);</script><script src="/js/insight.js" defer></script><div class="searchbox ins-search"><div class="searchbox-container ins-search-container"><div class="searchbox-input-wrapper"><input class="searchbox-input ins-search-input" type="text" placeholder="想要查找什么..."><span class="searchbox-close"><a class="fa fa-times-circle" onclick="closeWindow();"></a></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"><p>Seraching...</p></div></div></div></div></body></html>
+</li>
+</ul>
+</p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2022-11-18</span><i class="fa fa-tag"></i><a class="tag" href="/tags/NoneBot/" title="NoneBot">NoneBot </a><span class="leancloud_visitors"></span><span>大约481个字, 1分钟36秒读完</span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2022/11/18/bot功能列表/,兔兔实验室,bot功能列表,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2022/11/20/CQ%E7%A0%81%E3%80%81%E5%9B%BE%E5%BA%8A%E3%80%81%E5%9B%BE%E7%89%87%E5%9C%B0%E5%9D%80%E5%85%B3%E7%B3%BB%E6%A2%B3%E7%90%86/" title="CQ码、图床、图片地址关系梳理">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2022/09/30/20220930/" title="20220930">下一篇</a></li></ul></div><script src="/js/visitors.js"></script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script>(function(window){var INSIGHT_CONFIG={TRANSLATION:{POSTS:"文章",PAGES:"页面",CATEGORIES:"分类",TAGS:"标签",UNTITLED:"(无标题)",},CONTENT_URL:"/content.json",};window.INSIGHT_CONFIG=INSIGHT_CONFIG})(window);</script><script src="/js/insight.js" defer></script><div class="searchbox ins-search"><div class="searchbox-container ins-search-container"><div class="searchbox-input-wrapper"><input class="searchbox-input ins-search-input" type="text" placeholder="想要查找什么..."><span class="searchbox-close"><a class="fa fa-times-circle" onclick="closeWindow();"></a></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"><p>Seraching...</p></div></div></div></div></body></html>

@@ -367,7 +367,7 @@ tt {
   font-size: 0.95em;
   white-space: pre-wrap;
   border: 1px solid #e3edf3;
-  background: #f7f7f9;
+  background: rgba(240,240,240,0);
   color: #d14;
   border-radius: 2px;
 }
